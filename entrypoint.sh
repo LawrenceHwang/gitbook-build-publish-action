@@ -39,6 +39,7 @@ ls -al
 cp -rf $BOOK_DIR/* /gitbook/
 cd /gitbook
 npm i colors@1.4.0 # for fixing gitbook-plugin-anchor-navigation-ex dependency issue (issue#3)
+npm i gitbook-plugin-github-issue-feedback # workaround for gitbook-plugin-github-issue-feedback error (issue#4)
 cd -
 sh /root/custom-entrypoint.sh "gitbook init && gitbook install && gitbook build"
 checkIfErr
